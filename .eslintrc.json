@@ -1,0 +1,58 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "cypress/globals": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "cypress"],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none" // Menonaktifkan peringatan untuk argumen yang tidak digunakan
+      }
+    ],
+    "linebreak-style": "off",
+    "no-trailing-spaces": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off",
+    "import/order": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "jsx-a11y/strong-has-emphasis": "off",
+    "no-console": "off",
+    "default-param-last": "off",
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "no-alert": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "singleline-html-element-content-newline": "off",
+    "object-curly-newline": "off",
+    "multiline-html-element-content-newline": "off",
+    "quotes": "off"
+  }
+}
