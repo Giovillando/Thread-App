@@ -26,7 +26,7 @@ function LoginPage() {
           Lets
           <strong>Play MLBB</strong>
           <br />
-          Having Fun and Discussion in Here All.
+          Having Fun and Discussion about MLBB in Here.
         </h2>
         <LoginInput login={onLogin} />
         <p>
