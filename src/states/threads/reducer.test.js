@@ -1,11 +1,13 @@
 /**
  * test scenario for threadsReducer
  *
- * - threadReducers function
+ *  - threadReducers function
  *  - should return the initial state when given by unknown action
- *  - should return the threads when given by RECEIVE_ThreadS action
- *  - should return the threads with the new thread when given by ADD_Thread action
- *  - should return the threads with the toggled like thread when given by TOGGLE_LIKE_Thread action
+ *  - should return the threads when given by RECEIVE_THREADS action
+ *  - should return the threads with the new thread when given by CREATE_Thread action
+ *  - should return the threads with the up vote when given by UP_VOTE_THREAD action
+ *  - should return the threads with the down vote when given by DOWN_VOTE_THREAD action
+ * - should return the threads with the NETURALIZE vote when given by NETURALIZE_VOTE_THREAD action
  *
  */
 
@@ -24,6 +26,7 @@ describe("threadReducers function", () => {
     // assert
     expect(nextState).toEqual(initialState);
   });
+  
   // RECEIVE_THREADS
   it("should return the threads when given by RECEIVE_THREADS action", () => {
     // arrange
