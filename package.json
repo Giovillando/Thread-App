@@ -12,7 +12,8 @@
     "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "start": "wait-on http-get://0.0.0.0:5173 --timeout 30000 && npm run your-script"
+    "start": "wait-on --timeout 30000 http://0.0.0.0:5173 && npm run serve",
+    "serve": "your-serve-command"  
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
